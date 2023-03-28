@@ -1,42 +1,75 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: 0;
+  background-color: antiquewhite;
+  font-family: "Poppins", sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gray {
+  color: #918e9b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bold {
+  font-weight: bold;
+}
+.Navbar {
+  background-color: antiquewhite;
+  height: 70px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.Navbar > img {
+  max-width: 150px;
+  padding: 5px;
+}
+
+.hero {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photo-grid {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-grid img {
+  width: 90%;
+  max-width: 800px;
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+}
+
+.hero p {
+  margin-top: 0;
 }
 
 .card {
-  padding: 2em;
+  width: 200px;
+  font-size: 12px;
 }
 
-.read-the-docs {
-  color: #888;
+.card--img {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
 }
