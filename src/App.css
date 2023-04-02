@@ -58,11 +58,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 0.5em;
+  gap: 2em;
+  overflow: scroll;
+  flex-wrap: nowrap;
 }
 .card {
   width: 200px;
   font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
 }
 
 .card--img {
@@ -73,8 +80,20 @@ body {
 .card--stats {
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .card--star {
   height: 14px;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
